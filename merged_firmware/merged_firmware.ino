@@ -368,7 +368,6 @@ void micCollectSample() {
 }
 
 void micSendData() {
-  Serial.print("MIC:");
   for (int i = 0; i < NUM_MICS; i++) {
     unsigned int pp = signalMax[i] - signalMin[i];
     Serial.print(pp);
